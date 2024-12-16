@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Form
+        </title>
+        <link rel="stylesheet" href="form.css">
+
+    </head>
+    <body>
+        <form id="form">
+            <label class="titull">Emri</label><br>
+            <input type="text" id="emri" placeholder="emri" required><br>
+            <span id="errorEmri" class="error"></span><br><br>
+
+            <label class="titull">Tipi i lidhjes se librit</label><br>
+            <input type="radio" name="lidhja" id="lidhjaThjesht" value="1000" required>
+            <label>Lidhje e thjeshte (1000 L)</label><br>
+            <input type="radio" name="lidhja" id="lidhjaPlastifikuar" value="1500" required>
+            <label>Lidhje e plastifikuar (1500 L)</label><br>
+            <input type="radio" name="lidhja" id="lidhjaSpeciale" value="2000" required>
+            <label>Lidhje speciale (lekure) (2000 L)</label><br>
+            <span id="errorLidhja" class="error"></span><br>
+
+            <select id="letra" required>
+                <option selected disabled>Zgjidhni tipin e letres</option>
+                <option value="500">A5(500L)</option>
+                <option value="1000">A4(1000L)</option>
+                <option value="1500">A3(1500L)</option>
+            </select><br>
+            <span id="errorLetra" class="error"></span><br>
+            
+
+            <label  class="titull">Printim me ngjyra(500L)</label>
+            <input type="checkbox" id="checkNgjyra" ><br><br>
+
+            <label class="titull">Perfshi Dedikim(1000L)</label>
+            <input type="checkbox" id="checkDedikimin" ><br>
+            <input type="text" id="dedikimi" placeholder="Dedikim"><br><br>
+
+            <label class="titull">Totali:</label>
+            <input type="text" id="totali" readonly><br><br>
+            
+            <input type="reset" value="Fshi" id="fshi" class="buton">
+            <input type="submit" value="Llogarit" id="llogarit" class="buton">
+        </form>
+
+
+        <script src="form.js"></script>
+    </body>
+</html>

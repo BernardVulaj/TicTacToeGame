@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    width: 260px;
+    background-color:rgb(249, 238, 231);
+}
+.titull{
+    font-weight: bold;
+    color: #000;
+}
+.buton{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    border: 3px solid black;
+}
+#fshi{
+    background-color:navy;
+    color: white;
+}
+#fshi:hover{
+    background-color: peru;
+}
+
+#llogarit{
+    background-color:darkgray;
+    color: black;
+}
+
+#totali{
+    width: 8.3em;
+}
+.error{
+    color: red;
+    font-size: 14px;
+}
+
